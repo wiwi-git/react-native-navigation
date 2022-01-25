@@ -1,15 +1,13 @@
 import React from 'react';
-import styled from 'styled-components';
-
-const Container = styled.View`
-  flex: 1;
-  background-color: #fff;
-  justify-content: center;
-  align-items: center;
-`;
+import {NavigationContainer} from '@react-navigation/native';
+import StackNavigation from './navigations/Stack';
 
 const App = () => {
-  return <Container></Container>;
+  return (
+    <NavigationContainer>
+      <StackNavigation />
+    </NavigationContainer>
+  );
 };
 
 export default App;
